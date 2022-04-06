@@ -2,87 +2,82 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Bogdan CV</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body>
-		<table cellspacing="20">
-			<tr>
-				<td>
-					<img src="avatar.jpg" width="200" alt="my avatar">
-				</td>
-				<td>
-					<h1>Bogdan Alekseev</h1>
-					<p><em>UIX designer at <strong>almo code</strong></em></p>
-				</td>
-			</tr>
-		</table>
+	<body">
+		<div class="container">
+			<div class="info">
+				<img src="avatar.jpg" width="200" alt="my avatar" class="avatar">
+				<h1>Bogdan Alekseev</h1>
+				<p>UIX designer at almo code</p>	
+				<h4>Social network</h4>
+					<a href="https://instagram.com/chilibonin" target="_blank">Instagram</a>
+					•
+					<a href="https://twitter.com/chilibonin" target="_blank">Twitter</a>
+					•
+					<a href="https://t.me/chilibonin" target="_blank">Telegram</a>
+			</div>
 
-		<hr>
-
-		<h2>My social network</h2>
-		<ul> <!--Список из булетов-->
-			<li><a href="https://instagram.com/chilibonin" target="_blank">Instagram</a></li>
-			<li> <a href="https://twitter.com/chilibonin" target="_blank">Twitter</a></li>
-			<li> <a href="https://t.me/chilibonin" target="_blank">Telegram</a></li>
-		</ul>
-
-		<hr>
-		
-		<h2>My hobbies</h2>
-		<ol> <!--Список из цифр-->
-			<li>Сamping</li>
-			<li>Playing guitar</li>
-		</ol>
-
-		<hr>
-		
-		<h2>My experience</h2>
-		<table>
-			<tr>
-				<th>Company</th>
-				<th>Position</th>
-				<th>Year</th>
-			</tr>
-			<tr>
-				<td>Freelance</td>
-				<td>PM / UIX Designer</td>
-				<td>2017-2019</td>
-			</tr>
-			<tr>
-				<td>bn digital</td>
-				<td>UIX Designer</td>
-				<td>2019-2020</td>
-			</tr>
-		</table>
-
-		<hr>
-		
-		<h2>My projects</h2>
-		<a href="my-projects.html">Watch projects</a>
-		
-		<hr>
-		
-		<h2>Contact me</h2>
-		<form action="/">
-			<label for="name">Your name</label>
-			<br>
-			<input type="text" id="name" placeholder="Enter your name">
+			<div class="card bg-yellow">
+				<h2>My hobbies</h2>
+				<ol class="list"> <!--Список из цифр-->
+					<li>Сamping</li>
+					<li>Playing guitar</li>
+				</ol>
+			</div>
 			
-			<br>
+			<div class="card bg-green">
+				<h2>My experience</h2>
+				<table class="table">
+					<tr>
+						<td>Freelance</td>
+						<td>PM and UIX Designer</td>
+						<td>2017-2019</td>
+					</tr>
+					<tr>
+						<td>bn digital</td>
+						<td>UIX Designer</td>
+						<td>2019-2020</td>
+					</tr>
+					<tr>
+						<td>almo code</td>
+						<td>PM and UIX Designer</td>
+						<td>2020-now</td>
+					</tr>
+				</table>
+			</div>	
 
-			<label for="email">Your email</label>
-			<br>
-			<input type="text" id="email"
-			placeholder="your@mail.com">
-
-			<br>
-
-			<label for="messege">Your messege</label>
-			<br>
-			<textarea type="text" rows="3" cols="20" placeholder="Enter your massege"></textarea>	
+			<div class="card bg-red">
+				<h2>My projects</h2>
+				<a href="my-projects.html">Watch projects</a>
+			</div>
 			
-			<br>
+			<div class="card">
+				<h2>Contact me</h2>
+				<form action="/">
+					<label for="name">Your name</label>
+					<br>
+					<input type="text" id="name" placeholder="Enter your name">
+					
+					<br>
 
-			<input type="submit" value="Send">
-		</form>
+					<label for="email">Your email</label>
+					<br>
+					<input type="text" id="email"
+					placeholder="your@mail.com">
+
+					<br>
+
+					<label for="messege">Your messege</label>
+					<br>
+					<textarea type="text" rows="3" cols="20" placeholder="Enter your massege"></textarea>	
+					
+					<br>
+
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+		<div style="margin-bottom: 500px"></div>
 	</body>
 </html>
