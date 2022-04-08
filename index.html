@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 		<meta charset="UTF-8">
 		<title>Bogdan CV</title>
@@ -8,17 +9,19 @@
 		<div class="container">
 			<div class="info">
 				<img src="avatar.jpg" width="200" alt="my avatar" class="avatar">
-				<h1>Bogdan Alekseev</h1>
-				<p>UIX designer at almo code</p>	
-				<h4>Social network</h4>
-					<a href="https://instagram.com/chilibonin" target="_blank">Instagram</a>
-					•
-					<a href="https://twitter.com/chilibonin" target="_blank">Twitter</a>
-					•
-					<a href="https://t.me/chilibonin" target="_blank">Telegram</a>
+				<div class="info-text">
+					<h1>Bogdan Alekseev</h1>
+					<p>UIX designer at almo code</p>	
+					<h4>Social network</h4>
+						<a href="https://instagram.com/chilibonin" target="_blank">Instagram</a>
+						•
+						<a href="https://twitter.com/chilibonin" target="_blank">Twitter</a>
+						•
+						<a href="https://t.me/chilibonin" target="_blank">Telegram</a>
+					</div>
 			</div>
 
-			<div class="card bg-yellow">
+			<div class="card">
 				<h2>My hobbies</h2>
 				<ol class="list"> <!--Список из цифр-->
 					<li>Сamping</li>
@@ -26,7 +29,7 @@
 				</ol>
 			</div>
 			
-			<div class="card bg-green">
+			<div class="card">
 				<h2>My experience</h2>
 				<table class="table">
 					<tr>
@@ -47,37 +50,50 @@
 				</table>
 			</div>	
 
-			<div class="card bg-red">
+			<div class="card">
 				<h2>My projects</h2>
-				<a href="my-projects.html">Watch projects</a>
+				<ul class="link-list">
+					<li>
+						<a href="https://dribbble.com/shots/12027990-Eclipse-Blockchain-MLM-Game-Platform" target="_blank">Eclipse - Blockchain MLM Game Platform</a>
+					</li>
+					<li>
+						<a href="https://dribbble.com/shots/10640916-Uber-Start-for-drivers-interactive-Dark-Theme" target="_blank">Uber Start for drivers - interactive (Dark Theme)</a>
+					</li>
+				</ul>
 			</div>
 			
 			<div class="card">
-				<h2>Contact me</h2>
-				<form action="/">
-					<label for="name">Your name</label>
-					<br>
-					<input type="text" id="name" placeholder="Enter your name">
-					
-					<br>
+				<div class="contact">
+					<h2>Contact me</h2>
+					<form action="/">
+						<div class="row">
+							<div class="form-group">
+								<label for="name">Your name</label>
+								<input type="text" id="name" placeholder="Enter your name">
+							</div>
 
-					<label for="email">Your email</label>
-					<br>
-					<input type="text" id="email"
-					placeholder="your@mail.com">
+							<div class="form-group">
+								<label for="email">Your email</label>
+								<input type="text" id="email"
+								placeholder="your@mail.com">
+							</div>
+						</div>
 
-					<br>
+						<div class="form-group">
+							<label for="messege">Your messege</label>
+							<textarea type="text" rows="3" cols="20" placeholder="Enter your massege"></textarea>	
+						</div>
 
-					<label for="messege">Your messege</label>
-					<br>
-					<textarea type="text" rows="3" cols="20" placeholder="Enter your massege"></textarea>	
-					
-					<br>
-
-					<input type="submit" value="Send">
-				</form>
+						<input class="btn" type="submit" value="Send">
+					</form>
+				</div>
 			</div>
+
+			<div class="position">
+				<div class="box"></div>
+			</div>
+			
 		</div>
-		<div style="margin-bottom: 500px"></div>
+		<div style="margin-bottom: 80px"></div>
 	</body>
 </html>
