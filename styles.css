@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: #e7edf2;
+	color: #FF496A;
 	text-decoration: none;
 }
 
@@ -35,6 +35,13 @@ a:visited {
 .info	{
 	display: flex;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+	.info {
+		text-align: center;
+		display: block;
+	}
 }
 
 .info-text {
@@ -101,6 +108,7 @@ a:visited {
 
 .table {
 	width: 100%;
+	margin-bottom: 12px;
 }
 
 .table td {
@@ -187,10 +195,11 @@ form-group textarea:active {
 	border: none;
 	font-family: inherit;
 	cursor: pointer;
+	border-radius: 8px;
 }
 
 .btn:hover {
-	opacity: 0.8;
+	border-radius: 24px;
 }
 
 /* Position */
