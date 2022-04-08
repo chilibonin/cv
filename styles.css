@@ -70,6 +70,19 @@ a:visited {
 	padding-top: 32px;
 }
 
+.about {
+	color: #e7edf2;
+}
+
+.about h4 {
+	margin-bottom: 12px;
+}
+
+.about p {
+	opacity: 0.6;
+	margin-bottom: 32px;
+}
+
 /* .social {
 	background: #44515c;
 	padding: 15px;
